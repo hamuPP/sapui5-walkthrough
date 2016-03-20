@@ -30,6 +30,17 @@ sap.ui.define([
             var oList = this.getView().byId("invoiceList");
             var oBinding = oList.getBinding("items");
             oBinding.filter(aFilter);
+        },
+        onPress:function(oEvent){
+            var oItem = oEvent.getSource();
+
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            var getPath = oItem.getBindingContext("invoice").getPath().replace(/\//g,'.');
+            console.log(oItem.getBindingContext("invoice"));
+            console.log("InvoiceList.controller.js 40line: "+getPath);
+            oRouter.navTo("detail",{
+                invoicePath: getPath
+            });
         }
 
     });

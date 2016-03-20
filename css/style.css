@@ -6,3 +6,10 @@
     border-radius: 50%;
     background:#f8ac29;
 }
+/*  ProductRating */
+.myAppDemoWTProductRating {
+    padding: 0.75rem;
+}
+.myAppDemoWTProductRating .sapMRI {
+    vertical-align: initial;
+}
