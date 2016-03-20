@@ -33,10 +33,6 @@ sap.ui.define([
 
             //set dialog
             this.helloDialog = new HelloDialog();
-
-            // create the views based on the url/hash
-            this.getRouter().initialize();
-            //console.log(this);
         }
     });
 });
