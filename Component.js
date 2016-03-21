@@ -26,10 +26,10 @@ sap.ui.define([
             this.setModel(oModel);
 
             //set i18n model
-            var i18nModel = new ResourceModel({
-                bundleName:"sap.ui.demo.wt.i18n.i18n"
-            });
-            this.setModel(i18nModel,"i18n");
+            //var i18nModel = new ResourceModel({
+            //    bundleName:"sap.ui.demo.wt.i18n.i18n"
+            //});
+            //this.setModel(i18nModel,"i18n");
 
             //set dialog
             this.helloDialog = new HelloDialog();
@@ -37,5 +37,14 @@ sap.ui.define([
             // create the views based on the url/hash
             this.getRouter().initialize();
         }
+        /**以下函数暂时不知道有啥作用，
+         * 抄自https://sapui5.hana.ondemand.com/#docs/guide/b430345887f1419fba50320b57c1bdf9.html**/
+        //createContent:function(){
+        //    this.view = sap.ui.view({
+        //        id:"myView",
+        //        viewName:"samples.components.products.details.view.Details",
+        //        type:sap.ui.core.mvc.ViewType.JS
+        //    });
+        //}
     });
 });

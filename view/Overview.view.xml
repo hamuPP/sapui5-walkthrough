@@ -1,7 +1,13 @@
 <mvc:View
         controllerName="sap.ui.demo.wt.controller.App"
         xmlns="sap.m"
-        xmlns:mvc="sap.ui.core.mvc">
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:html="http://www.w3.org/1999/xhtml">
+    <html:style>
+        .native-html-btn{
+            background:#333;
+        }
+    </html:style>
     <Page title="{i18n>homePageTitle}">
         <headerContent>
             <Button
@@ -9,6 +15,7 @@
                     press="onOpenDialog"/>
         </headerContent>
         <content>
+            <html:button class="native-html-btn">native HTML button</html:button>
             <mvc:XMLView viewName="sap.ui.demo.wt.view.HelloPanel"/>
             <mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>
         </content>
