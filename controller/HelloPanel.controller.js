@@ -3,8 +3,9 @@
  */
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast"
-],function(Controller,MessageToast){
+    "sap/m/MessageToast",
+    "sap/hcm/AddressController"
+],function(Controller,MessageToast,Tc){
     "use strict";
     return Controller.extend("sap.ui.demo.wt.controller.HelloPanel",{
         onShowHello:function(){
@@ -16,6 +17,10 @@ sap.ui.define([
         },
         onOpenDialog:function(){
             this.getOwnerComponent().helloDialog.open(this.getView());
+        },
+        onShowTypedController:function(){
+            console.log(Tc);
+           Tc.myAlert();
         }
     });
 });

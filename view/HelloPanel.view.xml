@@ -9,9 +9,14 @@
         <content>
             <Button
                     icon="sap-icon://world"
-                    text="{i18n>openDialogButtonText}"
+                    text="1 {i18n>openDialogButtonText}"
                     press="onOpenDialog"
                     class="sapUiSmallMarginEnd myCustomBtn"/>
+            <Button
+                    icon="sap-icon://comment"
+                    text="typedController"
+                    press="onShowTypedController"
+                    />
             <Button
                     text="{i18n>showHelloButtonText}"
                     press="onShowHello"

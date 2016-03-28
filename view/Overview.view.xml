@@ -8,13 +8,22 @@
             background:#333;
         }
     </html:style>
-    <Page title="{i18n>homePageTitle}">
+    <Page title="overview.view.xml+ {i18n>homePageTitle}">
         <headerContent>
             <Button
                     icon="sap-icon://hello-world"
                     press="onOpenDialog"/>
         </headerContent>
         <content>
+
+                <Label text="First Name" class="sapUiSmallMargin" />
+                <Input value="{nameModel>/firstName}" valueLiveUpdate="true" width="200px" enabled="{nameModel>/enabled}" />
+                <Label text="Last Name" class="sapUiSmallMargin" />
+                <Input value="{nameModel>/lastName}" valueLiveUpdate="true" width="200px" enabled="{nameModel>/enabled}" />
+                <CheckBox selected="{nameModel>/enabled}" text="Enabled" />
+
+
+
             <html:button class="native-html-btn">native HTML button</html:button>
             <mvc:XMLView viewName="sap.ui.demo.wt.view.HelloPanel"/>
             <mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>

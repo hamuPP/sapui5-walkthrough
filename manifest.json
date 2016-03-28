@@ -1,6 +1,5 @@
 {
   "_version": "1.1.0",
-  "start_url":"index.html",
   "sap.app": {
     "_version": "1.1.0",
     "id": "sap.ui.demo.wt",
@@ -59,7 +58,7 @@
         "uri":"css/style.css"
       }]
     },
-      "routing": {
+    "routing": {
           "config": {
               "routerClass": "sap.m.routing.Router",
               "viewType": "XML",
